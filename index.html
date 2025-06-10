@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Analyzer</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Statement Analyzer</h1>
+        
+        <div class="upload-section">
+            <button id="analyzeBtn" onclick="analyzeStatement()">Select File & Analyze</button>
+            <p style="margin: 10px 0; color: #666;">or</p>
+            <input type="file" id="fileInput" accept=".csv,.pdf,.xlsx,.xls" style="margin: 10px 0;">
+            <button onclick="analyzeFromInput()">Analyze Selected File</button>
+        </div>
+        
+        <div id="loading" class="loading hidden">
+            <p>Analyzing your statement...</p>
+            <div class="spinner"></div>
+        </div>
+        
+        <div id="results" class="results hidden">
+            <h2>Analysis Results</h2>
+            <div id="categories"></div>
+            <div id="merchants"></div>
+            <div id="insights"></div>
+        </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
