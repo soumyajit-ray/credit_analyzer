@@ -2,3 +2,26 @@
 # will have compiled files and executables
 /target/
 /gen/schemas
+
+# Tauri build artifacts
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# Node modules (if using npm/yarn)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Dependencies
+*.exe
+*.dmg
+*.app
+*.deb
+*.AppImage
+
+# Large data files
+*.db
+*.sqlite
+*.log
